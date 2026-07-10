@@ -23,13 +23,12 @@ body {
 }
 .common-btn:hover {
   background-color: #2563eb;
-  /* text-decoration: underline; */
   animation: hoverAnimation 0.3s ease-in-out;
   transition: transform 0.3s ease;
   transform: translateY(-5px);
 }
 
-/* Navigation styles goes here */
+/* Navigation styles are here */
 header {
   background-color: #d5e3f2;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -66,4 +65,44 @@ ul li a:hover {
   background-color: #e0f2fe;
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
+}
+/* Navigation styles end here */
+
+/* Banner styles here */
+.banner-secton {
+  background-position: center;
+  background-repeat: no-repeat;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./assets/banner.jpg");
+  background-size: cover;
+  display: flex;
+  padding: 1rem 1rem;
+  gap: 1.5rem;
+  color: white;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-secton h1 {
+  font-weight: bolder;
+  font-size: 5rem;
+}
+.banner-secton button {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 0.8rem 2.5rem;
+  margin-top: 3rem;
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.banner-secton button:hover {
+  background-color: #2563eb;
+  animation: hoverAnimation 0.3s ease-in-out;
+  transition: transform 0.3s ease;
+  transform: translateY(-5px);
 }
