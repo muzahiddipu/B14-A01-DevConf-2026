@@ -1,3 +1,69 @@
+/* Universal styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  background-color: orange;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /* background-color: aqua;
+  border: 1px solid black; */
+  /* font-weight: <weight>;
+  font-style: normal; */
+}
+/* Common styling section(DRY) */
+.common-btn {
+  background-color: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.common-btn:hover {
+  background-color: #2563eb;
+  /* text-decoration: underline; */
+  animation: hoverAnimation 0.3s ease-in-out;
+  transition: transform 0.3s ease;
+  transform: translateY(-5px);
+}
+
+/* Navigation styles goes here */
+header {
+  background-color: #d5e3f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+ul li a {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 0.5rem;
+  color: #1f2937;
+  text-decoration: none;
+
+  transition:
+    color 0.3s ease,
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+ul li a:hover {
+  color: #2563eb;
+  background-color: #e0f2fe;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.15);
 }
